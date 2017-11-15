@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mock-up</title>
+        <link rel="stylesheet" href="index1.css">
+    </head>
+    <body>
+            <div class="section1" id="home" >
+                <div id="setOpacity">  
+                    <nav>
+                    <ul class="navbar" id="navigate">
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Hire Us</a></li>
+                        <li class="dropdownIcon"><a href="javascript:void(0)" onclick="dropDown()">&#9776;</a></li>
+                    </ul> 
+                </nav>
+                    
+                <div class="row home-msg">
+                    <div class="col-12">
+                        <p>INNOVATIVE CONSTRUCTION<br/> SERVICES</p>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-12">
+                        <a href="sign-up.html" style="text-decoration: none"><button class="signup">SIGN UP</button></a>
+                    </div>
+                </div>
+           </div>     
+          </div>
+         </div>
+         
+        <div class="container section2" id="about">
+            <div class="row">
+                <div class="col-5">
+                    <div class="msg">
+                    <div class="icon">
+                        <img src="images/logo.jpg">
+                    </div>
+                    <h1>What we do</h1>
+                    <p>We are an innovative construction company using cutting edge technology to provide amazing results.</p>
+                </div>
+                </div>    
+                <div class="col-7">
+                    <div class="whatWeDo"><img src="images/pic2.jpeg" width="400px"></div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-5">
+                    <div class="msg">
+                    <div class="icon">
+                        <img src="images/logo.jpg">
+                    </div>
+                    <h1>Expertise</h1>
+                    <p>Meet our experienced team who provide top notch services to make our customers happy. We are an innovative construction company using cutting edge technology to provide amazing results.</p>
+                </div>
+                </div>    
+                <div class="col-7">
+                    <div class="whatWeDo"><img src="images/pic1.jpeg" width="400px"></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-5">
+                    <div class="msg">
+                    <div class="icon">
+                        <img src="images/logo.jpg">
+                    </div>
+                    <h1>Hire Equipment</h1>
+                    <p>We are an innovative construction company using cutting edge technology to provide amazing results.We are an innovative construction company using cutting edge technology to provide amazing results. We are an innovative construction company using cutting edge technology to provide.</p>
+                </div>
+                </div>    
+                <div class="col-7">
+                    <div class="whatWeDo"><img src="images/pic3.jpeg" width="400px"></div>
+                </div>
+            </div>
+            
+        </div>
+        <hr/>
+        
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-4 contact">
+                    <h2>Contact Us</h2>
+                        <input type="text" name="fullname" placeholder="Enter name here"><br>
+                        <input type="email" name="email" placeholder="Example@mail.com">
+                </div>
+                <div class="col-4">
+                    <h2>Portfolio</h2>
+                    <ul>
+                        <li>Ali Hotels</li>
+                        <li>Birmingham Schools</li>
+                        <li>Rose Mall</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h2>Partners</h2>
+                    <ul>
+                        <li>Special Cement</li>
+                        <li>Ace Contractors</li>
+                        <li>Rose Mall</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyright">&copy;Wumi Adeniran</div>
+            </div>
+        </footer>
+        
+        
+        <script>
+            function dropDown(){
+            var x= document.getElementById("navigate");
+            if(x.className === "navbar"){
+                x.className += " responsive";  
+            }else{
+                x.className = "navbar";
+            }
+            }
+            
+        </script>
+    </body>
+</html>

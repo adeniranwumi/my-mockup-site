@@ -1,0 +1,306 @@
+body{
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+nav ul.navbar {
+    margin:0;
+}
+
+.section1{
+    background-image: url(images/pic5.jpeg);
+    margin: 0;
+    width:100%;
+    height: 548px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#setOpacity{
+     background-color: rgba(0,0,0,0.7);
+     height: 100%;
+}
+
+nav ul.navbar li{
+    list-style-type: none;
+    float:left;
+    
+}
+
+nav ul.navbar li a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 30px;
+}
+
+ nav ul.navbar li a:hover{
+    font-size:15px;
+    border-bottom: 1px solid white;
+}
+
+nav ul.navbar li.dropdownIcon{
+    display: none;
+}
+
+.home-msg{
+    margin: auto;
+}
+
+.home-msg p{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    line-height: 1.5;
+}
+
+button{
+    padding: 15px 50px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+button.signup{
+    margin: auto;
+    display: block;
+}
+
+div.section2{
+    height: 100%;
+   
+}
+
+.col-5{
+    padding-left: 10px;
+    margin:auto;
+    text-align: center;
+}
+.msg{
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0,.15),
+    0 2px 3px 0 rgba(0, 0, 0,.1);
+}
+
+div.msg, div.whatWeDo{
+    margin-bottom: 10px;
+}
+
+div.whatWeDo img{
+    margin-left: 100px;
+    box-shadow: -2px -2px 10px 2px rgba(0, 0, 0,.15), 2px 2px 7px 2px rgba(0, 0, 0, 1);
+}
+
+div.icon img, div.whatWeDo img{
+    margin: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/*#### Footer style ###*/
+footer.footsy{
+    height: 100%;
+    color: dimgray;
+}
+
+div.contact{
+    text-align: center;
+    padding-left: 0;
+}
+div.contact h2{
+    margin-top: 0;   
+}
+
+div.contact input{
+    margin-bottom: 7px;
+    border: 1px solid dimgray;
+    border-radius: 4px;
+    min-width: 20px;
+    padding: 5px;
+}
+
+footer.footsy ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+}
+
+footer.footsy ul li{
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+footer.footsy div.copyright{
+    padding:5px;
+    background-color: dimgray;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    height: 100%;
+}
+
+
+
+/*####### Sign up page styling ######*/
+
+div.sign-up-msg h2{
+   margin: 0;
+   padding: 70px 50px 5px 370px;
+    color: white;
+}
+
+form{
+    margin: 0 150px 0 250px;;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 500px;
+    height: 450px;
+}
+
+form ul li{
+    list-style-type: none;
+}
+
+form ul li label{
+    text-align: right;
+    float: left;
+    clear: left;
+}
+
+form ul li input, span, select, textarea{
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+    
+}
+
+form textarea{
+    width: 350px;
+    height: 100px;
+}
+
+[type="submit"]{
+    clear:left;
+    margin: 5px 20px 5px 160px;
+}
+
+/*### mobile responsive###*/
+@media screen and (max-width: 680px){
+    nav ul.navbar :not(:nth-child(1)){
+        display: none;
+    }
+    
+    nav ul.navbar li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    
+    nav ul.navbar.responsive li.dropdownIcon a{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    nav ul.navbar.responsive{
+        position: relative;
+    }
+    
+    nav ul.navbar.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    nav ul.navbar.responsive li a{
+        padding-left: 0;
+        display: block;
+        text-align: left;
+    }
+    
+    .row, div.col-5, div.col-7{
+        width: 100%;
+        margin: 0;
+    }
+    
+    nav ul.navbar.responsive li a:hover{
+        font-size: 10px;
+        border: none;
+    }
+    
+    .home-msg p{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    
+    div.msg{
+        display: block;
+        width: 100%;
+        margin-left: 5px;
+    }
+    
+    div.whatWeDo img{
+        display: none;
+    }
+    
+    footer.footsy div.col-4{
+        width: 50%;
+    }
+    
+}
+
+
+/*#### grid styling ####*/
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.row::after{
+    display:table;
+    clear:both;
+    content:"";
+}
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+*{
+    box-sizing:border-box;
+}
+
+[class*="col-"]{
+    padding: 10px;
+    float: left;
+}
